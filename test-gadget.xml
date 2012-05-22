@@ -1,0 +1,21 @@
+<Module>
+    <ModulePrefs
+        title="Karma-Test v0.1"
+    >
+    
+    </ModulePrefs>
+    
+    <Require feature="google.contentmatch">
+    </Require>
+    
+    <Content type="html" view="card">
+        <![CDATA[
+        
+            <script type="text/javascript">
+            </script>
+            
+            Hello Karma!
+            
+        ]]>
+    </Content>
+</Module>
