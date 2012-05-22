@@ -1,46 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2008 Google Inc. All Rights Reserved. -->
 <Module>
-    <ModulePrefs
-        title="Karma-Test v0.1"
-		height="200"
-    >
-		
-		<Require feature="dynamic-height"/>
-    
-		<Require feature="google.contentmatch">
-		  <Param name="extractors">
-			google.com:HelloWorld
-		  </Param>
-		</Require>
-	
-    </ModulePrefs>
-    
-    <Content type="html" view="card">
-        <![CDATA[
-        
-			<script type="text/javascript" src="http://example.com/gadgets/sso.js"></script>
-		  <script type="text/javascript">
+  <ModulePrefs title="__MSG_GADGET_TITLE__"
+               description="__MSG_GADGET_DESCRIPTION__"
+               author="Google"
+               author_email="friendconnect-feedback+gadgets@google.com"
+               thumbnail="http://www.google.com/friendconnect/scs/images/social-os-sample.png"
+               screenshot="http://www.google.com/friendconnect/scs/images/social-os-sample.png">
+    <Locale messages='http://www.google.com/friendconnect/gadgetmsg/sample/ALL_ALL.xml'/>
+<Locale lang='ar'  language_direction='rtl' messages='http://www.google.com/friendconnect/gadgetmsg/sample/ar_ALL.xml'/>
+<Locale lang='bn' messages='http://www.google.com/friendconnect/gadgetmsg/sample/bn_ALL.xml'/>
+<Locale lang='bg' messages='http://www.google.com/friendconnect/gadgetmsg/sample/bg_ALL.xml'/>
+<Locale lang='ca' messages='http://www.google.com/friendconnect/gadgetmsg/sample/ca_ALL.xml'/>
+<Locale lang='zh' messages='http://www.google.com/friendconnect/gadgetmsg/sample/zh_ALL.xml'/>
+<Locale lang='zh' country='CN' messages='http://www.google.com/friendconnect/gadgetmsg/sample/zh_CN.xml'/>
+<Locale lang='zh' country='HK' messages='http://www.google.com/friendconnect/gadgetmsg/sample/zh_HK.xml'/>
+<Locale lang='zh' country='TW' messages='http://www.google.com/friendconnect/gadgetmsg/sample/zh_TW.xml'/>
+<Locale lang='hr' messages='http://www.google.com/friendconnect/gadgetmsg/sample/hr_ALL.xml'/>
+<Locale lang='cs' messages='http://www.google.com/friendconnect/gadgetmsg/sample/cs_ALL.xml'/>
+<Locale lang='da' messages='http://www.google.com/friendconnect/gadgetmsg/sample/da_ALL.xml'/>
+<Locale lang='nl' messages='http://www.google.com/friendconnect/gadgetmsg/sample/nl_ALL.xml'/>
+<Locale lang='en' messages='http://www.google.com/friendconnect/gadgetmsg/sample/en_ALL.xml'/>
+<Locale lang='en' country='IN' messages='http://www.google.com/friendconnect/gadgetmsg/sample/en_IN.xml'/>
+<Locale lang='en' country='IE' messages='http://www.google.com/friendconnect/gadgetmsg/sample/en_IE.xml'/>
+<Locale lang='en' country='SG' messages='http://www.google.com/friendconnect/gadgetmsg/sample/en_SG.xml'/>
+<Locale lang='en' country='ZA' messages='http://www.google.com/friendconnect/gadgetmsg/sample/en_ZA.xml'/>
+<Locale lang='en' country='GB' messages='http://www.google.com/friendconnect/gadgetmsg/sample/en_GB.xml'/>
+<Locale lang='fil' messages='http://www.google.com/friendconnect/gadgetmsg/sample/fil_ALL.xml'/>
+<Locale lang='fi' messages='http://www.google.com/friendconnect/gadgetmsg/sample/fi_ALL.xml'/>
+<Locale lang='fr' messages='http://www.google.com/friendconnect/gadgetmsg/sample/fr_ALL.xml'/>
+<Locale lang='de' messages='http://www.google.com/friendconnect/gadgetmsg/sample/de_ALL.xml'/>
+<Locale lang='de' country='CH' messages='http://www.google.com/friendconnect/gadgetmsg/sample/de_CH.xml'/>
+<Locale lang='el' messages='http://www.google.com/friendconnect/gadgetmsg/sample/el_ALL.xml'/>
+<Locale lang='gu' messages='http://www.google.com/friendconnect/gadgetmsg/sample/gu_ALL.xml'/>
+<Locale lang='iw'  language_direction='rtl' messages='http://www.google.com/friendconnect/gadgetmsg/sample/iw_ALL.xml'/>
+<Locale lang='hi' messages='http://www.google.com/friendconnect/gadgetmsg/sample/hi_ALL.xml'/>
+<Locale lang='hu' messages='http://www.google.com/friendconnect/gadgetmsg/sample/hu_ALL.xml'/>
+<Locale lang='in' messages='http://www.google.com/friendconnect/gadgetmsg/sample/in_ALL.xml'/>
+<Locale lang='it' messages='http://www.google.com/friendconnect/gadgetmsg/sample/it_ALL.xml'/>
+<Locale lang='ja' messages='http://www.google.com/friendconnect/gadgetmsg/sample/ja_ALL.xml'/>
+<Locale lang='kn' messages='http://www.google.com/friendconnect/gadgetmsg/sample/kn_ALL.xml'/>
+<Locale lang='ko' messages='http://www.google.com/friendconnect/gadgetmsg/sample/ko_ALL.xml'/>
+<Locale lang='lv' messages='http://www.google.com/friendconnect/gadgetmsg/sample/lv_ALL.xml'/>
+<Locale lang='ln' messages='http://www.google.com/friendconnect/gadgetmsg/sample/ln_ALL.xml'/>
+<Locale lang='lt' messages='http://www.google.com/friendconnect/gadgetmsg/sample/lt_ALL.xml'/>
+<Locale lang='ms' messages='http://www.google.com/friendconnect/gadgetmsg/sample/ms_ALL.xml'/>
+<Locale lang='ml' messages='http://www.google.com/friendconnect/gadgetmsg/sample/ml_ALL.xml'/>
+<Locale lang='mr' messages='http://www.google.com/friendconnect/gadgetmsg/sample/mr_ALL.xml'/>
+<Locale lang='no' messages='http://www.google.com/friendconnect/gadgetmsg/sample/no_ALL.xml'/>
+<Locale lang='or' messages='http://www.google.com/friendconnect/gadgetmsg/sample/or_ALL.xml'/>
+<Locale lang='fa'  language_direction='rtl' messages='http://www.google.com/friendconnect/gadgetmsg/sample/fa_ALL.xml'/>
+<Locale lang='pl' messages='http://www.google.com/friendconnect/gadgetmsg/sample/pl_ALL.xml'/>
+<Locale lang='pt' country='BR' messages='http://www.google.com/friendconnect/gadgetmsg/sample/pt_BR.xml'/>
+<Locale lang='pt' country='PT' messages='http://www.google.com/friendconnect/gadgetmsg/sample/pt_PT.xml'/>
+<Locale lang='ro' messages='http://www.google.com/friendconnect/gadgetmsg/sample/ro_ALL.xml'/>
+<Locale lang='ru' messages='http://www.google.com/friendconnect/gadgetmsg/sample/ru_ALL.xml'/>
+<Locale lang='sr' messages='http://www.google.com/friendconnect/gadgetmsg/sample/sr_ALL.xml'/>
+<Locale lang='sk' messages='http://www.google.com/friendconnect/gadgetmsg/sample/sk_ALL.xml'/>
+<Locale lang='sl' messages='http://www.google.com/friendconnect/gadgetmsg/sample/sl_ALL.xml'/>
+<Locale lang='es' messages='http://www.google.com/friendconnect/gadgetmsg/sample/es_ALL.xml'/>
+<Locale lang='sv' messages='http://www.google.com/friendconnect/gadgetmsg/sample/sv_ALL.xml'/>
+<Locale lang='gsw' messages='http://www.google.com/friendconnect/gadgetmsg/sample/gsw_ALL.xml'/>
+<Locale lang='ta' messages='http://www.google.com/friendconnect/gadgetmsg/sample/ta_ALL.xml'/>
+<Locale lang='te' messages='http://www.google.com/friendconnect/gadgetmsg/sample/te_ALL.xml'/>
+<Locale lang='th' messages='http://www.google.com/friendconnect/gadgetmsg/sample/th_ALL.xml'/>
+<Locale lang='tr' messages='http://www.google.com/friendconnect/gadgetmsg/sample/tr_ALL.xml'/>
+<Locale lang='uk' messages='http://www.google.com/friendconnect/gadgetmsg/sample/uk_ALL.xml'/>
+<Locale lang='vi' messages='http://www.google.com/friendconnect/gadgetmsg/sample/vi_ALL.xml'/>
 
-			<!-- Fetch the array of content matches. -->
-			matches = google.contentmatch.getContentMatches();
-			var matchList = document.createElement('UL');
-			var listItem;
-			var extractedText;
+    <Require feature="opensocial-0.8" />   
+    <Require feature="dynamic-height"/>
+    <Require feature="views" />   
+  </ModulePrefs>
+  <Content type="html"><![CDATA[
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+  <html>
+  <head>
+<script type="text/javascript">
 
-			<!-- Iterate through the array and display output for each match. -->
-			for (var match in matches) {
-			  for (var key in matches[match]) {
-				listItem = document.createElement('LI');
-				extractedText = document.createTextNode(key + ": " + matches[match][key]);
-				listItem.appendChild(extractedText);
-				matchList.appendChild(listItem);
-			  }
-			}
-			document.body.appendChild(matchList);
-			gadgets.window.adjustHeight(100);
-		  </script>
+// load the data using open social 
+function loadData() {
+  var req = opensocial.newDataRequest();
+  req.add(req.newFetchPersonRequest('OWNER'), 'owner');
+  req.add(req.newFetchPersonRequest('VIEWER'), 'viewer');
+  req.add(req.newFetchPeopleRequest(new opensocial.IdSpec({'userId' : 'VIEWER', 'groupId' : 'FRIENDS'})), 'viewerFriends');
+  req.add(req.newFetchPeopleRequest(new opensocial.IdSpec({'userId' : 'OWNER', 'groupId' : 'FRIENDS'})), 'ownerFriends');
+  req.add(req.newFetchPeopleRequest(new opensocial.IdSpec({'userId' : 'OWNER', 'groupId' : 'ADMINS'})), 'admins');
+  req.send(onLoadCallback);
+}
 
-            Hello Karma! AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-            
-        ]]>
-    </Content>
+// called after data is loaded
+function onLoadCallback(data) {
+  
+  showSite(data);
+  showSiteMembers(data);
+  showSiteAdmins(data);
+  showViewer(data);
+  showViewerFriends(data);
+  
+  gadgets.window.adjustHeight();
+}
+
+// extracts and displays site name
+function showSite(data) {
+  var owner = data.get('owner').getData();
+  document.getElementById('site').innerHTML = owner.getDisplayName();
+}
+
+// extracts and displays site membership
+function showSiteMembers(data) {
+  var ownerFriends = data.get('ownerFriends').getData();
+  
+  html = new Array();
+  html.push('<ul>');
+  ownerFriends.each(function(person) {
+    html.push('<li><span class="highlight">' + person.getDisplayName() + "</span></li>");
+  });
+  html.push('</ul>');
+  document.getElementById('site-members').innerHTML = html.join('');
+}
+
+// extracts and displays site administrators
+function showSiteAdmins(data) {
+  var ownerFriends = data.get('admins').getData();
+  
+  html = new Array();
+  html.push('<ul>');
+  ownerFriends.each(function(person) {
+    html.push('<li><span class="highlight">' + person.getDisplayName() + "</span></li>");
+  });
+  html.push('</ul>');
+  document.getElementById('site-admins').innerHTML = html.join('');
+}
+
+// extracts and displays the viewer
+function showViewer(data) {
+  var name = 'Anonymous';
+  if(data.get('viewer').getData()) {
+    var viewer = data.get('viewer').getData();
+    name = viewer.getDisplayName();
+  }
+  document.getElementById('viewer').innerHTML = name;
+}
+
+// extracts and displays friends
+function showViewerFriends(data) {
+  var viewerFriends = data.get('viewerFriends').getData();
+  if(viewerFriends) {
+    html = new Array();
+    html.push('<ul>');
+    viewerFriends.each(function(person) {
+      html.push('<li><span class="highlight">' + person.getDisplayName() + "</span></li>");
+    });
+    html.push('</ul>');
+    document.getElementById('viewer-friends').innerHTML = html.join('');
+  }
+}
+
+// shows the current view mode
+function showViewMode() {
+  document.getElementById('mode').innerHTML = gadgets.views.getCurrentView().getName();
+}
+
+function init() {
+  loadData();
+  showViewMode();
+  _IG_AdjustIFrameHeight();
+}
+
+gadgets.util.registerOnLoadHandler(init);
+</script>
+
+<style type="text/css"><!--
+  body,td,div,p,a,font,span {
+    font-family: arial,sans-serif;
+    font-size: 13px;
+  }
+  code {
+    font-size: 10px;
+  }
+  .section-1 {
+    padding: 10px 5px;
+    background-color:#E5ECF9;
+  }
+  .section-2{
+    padding: 10px 5px;
+    background-color:#FFFFFF;
+  }
+
+  .highlight {
+     background-color:#FFFF99;
+  }
+
+  #main {
+   padding: 10px;
+  }
+--></style>
+</head>
+<body dir='__BIDI_DIR__'>
+<div id='main'>
+
+  <h2>Sample Gadget</h2>
+
+  <div class="section-1">
+    <b>API:</b> <code>gadgets.views.requestNavigateTo</code><br>
+    <a href="javascript:void(0);" class="highlight"
+       onclick="gadgets.views.requestNavigateTo(gadgets.views.getSupportedViews()['canvas']);return false;">
+       Switch to Canvas View</a>
+  </div>
+
+  <div class="section-2">
+    <b>API:</b> <code>gadgets.views.requestNavigateTo</code><br>
+    <a href="javascript:void(0);" class="highlight"
+       onclick="gadgets.views.requestNavigateTo(gadgets.views.getSupportedViews()['profile']);return false;">
+       Switch to Profile View</a>
+  </div>
+
+  <div class="section-1">
+    <b>API:</b> <code>gadgets.views.getCurrentView().getName()</code><br>
+    <b>Current mode:</b> <span id='mode' class="highlight"></span><br>
+  </div>
+
+  <div class="section-2">
+    <b>API:</b> <code>opensocial.DataRequest.newFetchPersonRequest('OWNER')</code><br>
+    <b>Site Name:</b> <span id='site' class="highlight"></span><br>
+  </div>
+
+  <div class="section-1">
+    <b>API:</b>
+      <code>
+opensocial.DataRequest.newFetchPersonRequest(
+  new opensocial.IdSpec({'userId' : 'OWNER', 'groupId' : 'ADMINS'}));
+      </code><br>
+    <b>Site Administrators:</b>
+    <div id='site-admins'></div>
+  </div>
+
+  <div class="section-2">
+    <b>API:</b>
+    <code>
+opensocial.DataRequest.newFetchPersonRequest(
+  new opensocial.IdSpec({'userId' : 'OWNER', 'groupId' : 'FRIENDS'}));
+    </code><br>
+    <b>Site Members:</b>
+    <div id='site-members'></div>
+  </div>
+
+  <div class="section-1">
+    <b>API:</b> <code>newFetchPersonRequest('VIEWER')</code><br>
+    <b>Viewer:</b>
+    <span id='viewer' class="highlight"></span>
+  </div>
+
+  <div class="section-2">
+    <b>API:</b>
+    <code>
+opensocial.DataRequest.newFetchPersonRequest(
+  new opensocial.IdSpec({'userId' : 'VIEWER', 'groupId' : 'FRIENDS'}));
+    </code><br>
+    <b>Viewer friends:</b>
+    <div id='viewer-friends'></div>
+  </div>
+</div>
+</body>
+</html>
+]]></Content>
 </Module>
