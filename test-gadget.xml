@@ -5,10 +5,7 @@
     
     </ModulePrefs>
     
-    <Require feature="google.contentmatch">
-    </Require>
-    
-    <Content type="html" view="card">
+    <Content type="html">
         <![CDATA[
         
             <script type="text/javascript">
